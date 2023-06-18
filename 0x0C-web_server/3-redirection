@@ -5,7 +5,7 @@ sudo apt-get -y update
 sudo apt -y install nginx
 sudo ufw allow 'Nginx HTTP'
 sudo chown -R "$USER:$USER" /var/www/html/
-echo 'Hello World!' | sudo tee /var/www/html/index.html
+echo 'Hello World!' | sudo ubuntu /var/www/html/index.html
 # sudo cp /etc/nginx/sites-enabled/default  /etc/nginx/sites-enabled/default.bak
 SERVERCONFIG=\
 "server {
@@ -22,7 +22,7 @@ SERVERCONFIG=\
         }
         location /redirect_me {
             return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-        }
+        }i
 }"
 echo "$SERVERCONFIG" | sudo tee /etc/nginx/sites-enabled/default 
 sudo service nginx restart

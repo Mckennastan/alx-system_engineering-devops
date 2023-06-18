@@ -5,7 +5,7 @@ sudo apt-get -y update
 sudo apt -y install nginx
 sudo ufw allow 'Nginx HTTP'
 sudo chown -R "$USER:$USER" /var/www/html/
-echo 'Hello World!' | sudo tee /var/www/html/index.html
+echo 'Hello World!' | sudo ubuntu /var/www/html/index.html
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/error-page.html
 SERVERCONFIG=\
 "server {
