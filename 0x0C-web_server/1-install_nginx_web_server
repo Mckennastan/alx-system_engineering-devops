@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# configures a new Ubuntu machine to respect below requirements
+# Nginx should be listening on port 80
+
+sudo apt-get -y update
+sudo apt -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo chown -R $USER:$USER /var/www/html/
+sudo echo 'Hello World!' > /var/www/html/index.html
+sudo service nginx start
