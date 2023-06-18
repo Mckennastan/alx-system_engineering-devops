@@ -1,195 +1,0 @@
-[34m
-* Datadog Agent 7 install script v1.17.0
-[0m
-[34m
-* Installing apt-transport-https, curl and gnupg
-[0m
-Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
-Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
-Hit:3 http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu focal InRelease
-Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
-Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
-Get:6 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [28.5 kB]
-Get:7 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2,774 kB]
-Get:8 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1,057 kB]
-Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2,345 kB]
-Get:10 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2,483 kB]
-Get:11 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,352 kB]
-Get:12 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [31.2 kB]
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3,253 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.6 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [55.2 kB]
-Fetched 13.7 MB in 15s (911 kB/s)
-Reading package lists...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  dirmngr gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server
-  gpgconf gpgsm gpgv libcurl4
-Suggested packages:
-  pinentry-gnome3 tor parcimonie xloadimage scdaemon
-The following NEW packages will be installed:
-  apt-transport-https
-The following packages will be upgraded:
-  curl dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client
-  gpg-wks-server gpgconf gpgsm gpgv libcurl4
-13 upgraded, 1 newly installed, 0 to remove and 180 not upgraded.
-Need to get 2,961 kB of archives.
-After this operation, 172 kB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpg-wks-client amd64 2.2.19-3ubuntu2.2 [97.4 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dirmngr amd64 2.2.19-3ubuntu2.2 [330 kB]
-Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpg-wks-server amd64 2.2.19-3ubuntu2.2 [90.2 kB]
-Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gnupg-utils amd64 2.2.19-3ubuntu2.2 [481 kB]
-Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpg-agent amd64 2.2.19-3ubuntu2.2 [232 kB]
-Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpg amd64 2.2.19-3ubuntu2.2 [482 kB]
-Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpgconf amd64 2.2.19-3ubuntu2.2 [124 kB]
-Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gnupg-l10n all 2.2.19-3ubuntu2.2 [51.7 kB]
-Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gnupg all 2.2.19-3ubuntu2.2 [259 kB]
-Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpgsm amd64 2.2.19-3ubuntu2.2 [217 kB]
-Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpgv amd64 2.2.19-3ubuntu2.2 [200 kB]
-Get:12 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 apt-transport-https all 2.0.9 [1,704 B]
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 curl amd64 7.68.0-1ubuntu2.18 [161 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcurl4 amd64 7.68.0-1ubuntu2.18 [236 kB]
-debconf: delaying package configuration, since apt-utils is not installed
-Fetched 2,961 kB in 1s (4,058 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 76367 files and directories currently installed.)
-Preparing to unpack .../00-gpg-wks-client_2.2.19-3ubuntu2.2_amd64.deb ...
-Unpacking gpg-wks-client (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../01-dirmngr_2.2.19-3ubuntu2.2_amd64.deb ...
-Unpacking dirmngr (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../02-gpg-wks-server_2.2.19-3ubuntu2.2_amd64.deb ...
-Unpacking gpg-wks-server (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../03-gnupg-utils_2.2.19-3ubuntu2.2_amd64.deb ...
-Unpacking gnupg-utils (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../04-gpg-agent_2.2.19-3ubuntu2.2_amd64.deb ...
-Unpacking gpg-agent (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../05-gpg_2.2.19-3ubuntu2.2_amd64.deb ...
-Unpacking gpg (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../06-gpgconf_2.2.19-3ubuntu2.2_amd64.deb ...
-Unpacking gpgconf (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../07-gnupg-l10n_2.2.19-3ubuntu2.2_all.deb ...
-Unpacking gnupg-l10n (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../08-gnupg_2.2.19-3ubuntu2.2_all.deb ...
-Unpacking gnupg (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../09-gpgsm_2.2.19-3ubuntu2.2_amd64.deb ...
-Unpacking gpgsm (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Preparing to unpack .../10-gpgv_2.2.19-3ubuntu2.2_amd64.deb ...
-Unpacking gpgv (2.2.19-3ubuntu2.2) over (2.2.19-3ubuntu2.1) ...
-Setting up gpgv (2.2.19-3ubuntu2.2) ...
-Selecting previously unselected package apt-transport-https.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 76367 files and directories currently installed.)
-Preparing to unpack .../apt-transport-https_2.0.9_all.deb ...
-Unpacking apt-transport-https (2.0.9) ...
-Preparing to unpack .../curl_7.68.0-1ubuntu2.18_amd64.deb ...
-Unpacking curl (7.68.0-1ubuntu2.18) over (7.68.0-1ubuntu2.7) ...
-Preparing to unpack .../libcurl4_7.68.0-1ubuntu2.18_amd64.deb ...
-Unpacking libcurl4:amd64 (7.68.0-1ubuntu2.18) over (7.68.0-1ubuntu2.7) ...
-Setting up apt-transport-https (2.0.9) ...
-Setting up gnupg-l10n (2.2.19-3ubuntu2.2) ...
-Setting up gpgconf (2.2.19-3ubuntu2.2) ...
-Setting up libcurl4:amd64 (7.68.0-1ubuntu2.18) ...
-Setting up curl (7.68.0-1ubuntu2.18) ...
-Setting up gpg (2.2.19-3ubuntu2.2) ...
-Setting up gnupg-utils (2.2.19-3ubuntu2.2) ...
-Setting up gpg-agent (2.2.19-3ubuntu2.2) ...
-Setting up gpgsm (2.2.19-3ubuntu2.2) ...
-Setting up dirmngr (2.2.19-3ubuntu2.2) ...
-Setting up gpg-wks-server (2.2.19-3ubuntu2.2) ...
-Setting up gpg-wks-client (2.2.19-3ubuntu2.2) ...
-Setting up gnupg (2.2.19-3ubuntu2.2) ...
-Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
-Processing triggers for man-db (2.9.1-1) ...
-Processing triggers for install-info (6.7.0.dfsg.2-5) ...
-[34m
-* Installing APT package sources for Datadog
-[0m
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6226  100  6226    0     0  32092      0 --:--:-- --:--:-- --:--:-- 32092
-gpg: directory '/root/.gnupg' created
-gpg: /root/.gnupg/trustdb.gpg: trustdb created
-gpg: key 32637D44F14F620E: public key "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" imported
-gpg: Total number processed: 1
-gpg:               imported: 1
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6226  100  6226    0     0  32427      0 --:--:-- --:--:-- --:--:-- 59295
-gpg: key 32637D44F14F620E: "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" not changed
-gpg: Total number processed: 1
-gpg:              unchanged: 1
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  9001  100  9001    0     0  87388      0 --:--:-- --:--:-- --:--:-- 86548
-gpg: key D3A80E30382E94DE: public key "Datadog, Inc <package@datadoghq.com>" imported
-gpg: Total number processed: 1
-gpg:               imported: 1
-Ign:1 https://apt.datadoghq.com stable InRelease
-Get:2 https://apt.datadoghq.com stable Release [14.3 kB]
-Get:3 https://apt.datadoghq.com stable Release.gpg [801 B]
-Get:4 https://apt.datadoghq.com stable/7 all Packages [964 B]
-Get:5 https://apt.datadoghq.com stable/7 amd64 Packages [36.7 kB]
-Fetched 52.8 kB in 1s (74.6 kB/s)
-Reading package lists...
-  [33mInstalling package(s): datadog-agent datadog-signing-keys
-[0m
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  datadog-agent datadog-signing-keys
-0 upgraded, 2 newly installed, 0 to remove and 180 not upgraded.
-Need to get 378 MB of archives.
-After this operation, 1,188 MB of additional disk space will be used.
-Get:1 https://apt.datadoghq.com stable/7 amd64 datadog-agent amd64 1:7.45.0-1 [378 MB]
-Get:2 https://apt.datadoghq.com stable/7 amd64 datadog-signing-keys all 1:1.2.0-1 [21.0 kB]
-debconf: delaying package configuration, since apt-utils is not installed
-Fetched 378 MB in 35s (10.7 MB/s)
-Selecting previously unselected package datadog-agent.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 76371 files and directories currently installed.)
-Preparing to unpack .../datadog-agent_1%3a7.45.0-1_amd64.deb ...
-Unpacking datadog-agent (1:7.45.0-1) ...
-Selecting previously unselected package datadog-signing-keys.
-Preparing to unpack .../datadog-signing-keys_1%3a1.2.0-1_all.deb ...
-Unpacking datadog-signing-keys (1:1.2.0-1) ...
-Setting up datadog-agent (1:7.45.0-1) ...
-Creating dd-agent group
-Creating dd-agent user
-Enabling service datadog-agent
-Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent.service → /lib/systemd/system/datadog-agent.service.
-Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-process.service → /lib/systemd/system/datadog-agent-process.service.
-Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-trace.service → /lib/systemd/system/datadog-agent-trace.service.
-Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-security.service → /lib/systemd/system/datadog-agent-security.service.
-No datadog.yaml file detected, not starting the agent
-Setting up datadog-signing-keys (1:1.2.0-1) ...
-Processing triggers for systemd (245.4-4ubuntu3.15) ...
-W: --force-yes is deprecated, use one of the options starting with --allow instead.
-[34m
-* Adding your API key to the Datadog Agent configuration: /etc/datadog-agent/datadog.yaml
-[0m
-[34m
-* Setting SITE in the Datadog Agent configuration: /etc/datadog-agent/datadog.yaml
-[0m
-[34m* Starting the Datadog Agent...
-[0m
-Restarting Datadog Agent
- * Stopping Datadog Agent datadog-agent
-   ...done.
- * Stopping Datadog Process Agent datadog-agent-process
-   ...done.
- * Stopping Datadog Trace Agent (APM) datadog-agent-trace
-   ...done.
-/etc/datadog-agent/security-agent.yaml not found. Exiting datadog-agent-security
- * Starting Datadog Agent datadog-agent
-   ...fail!
-[31mError starting Datadog Agent
-It looks like you hit an issue when trying to install the Datadog Agent.
-
-Troubleshooting and basic usage information for the Datadog Agent are available at:
-
-    https://docs.datadoghq.com/agent/basic_agent_usage/
-[0m
-Do you want to send a failure report to Datadog (including ddagent-install.log)? (y/[n]) 
-If you are still having problems, please send an email to support@datadoghq.com
-with the contents of ddagent-install.log and any information you think would be
-useful and we will do our very best to help you solve your problem.
