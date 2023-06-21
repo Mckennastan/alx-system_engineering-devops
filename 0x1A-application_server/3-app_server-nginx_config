@@ -20,7 +20,7 @@ server {
         # Header:
         add_header X-Served-By "23412-web-01";
 
-        # rewrite:
+        # Rewrite:
         rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
 
         listen [::]:80 default_server;
